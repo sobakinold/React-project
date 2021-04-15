@@ -1,18 +1,18 @@
 .App {
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   display: grid;
-  /* grid-template-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr;
   grid-template-rows: 100px 1fr;
   grid-template-areas:
     "header header"
     "sidebar content";
-  grid-gap: 5px; */
-  grid-auto-columns: auto;
+  grid-gap: 5px;
+  /* grid-auto-columns: auto;
   grid-template-areas:
     "header header"
     "sidebar content";
-  grid-gap: 5px;
+  grid-gap: 5px; */
 }
 .Header,
 .Aside {
@@ -21,7 +21,11 @@
 .Header {
   grid-area: header;
 }
+.AvaHead {
+  width: 80px;
+}
 .Aside {
+  /* width: 150px; */
   grid-area: sidebar;
 }
 .Article {
@@ -95,7 +99,6 @@ textarea {
 .App * img {
   width: 80px;
 }
-
 @media (max-width: 640px) {
   .App {
     grid-template-columns: 1fr;
