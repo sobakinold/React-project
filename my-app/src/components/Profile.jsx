@@ -19,19 +19,19 @@ const Profile = () => {
                 <div className='UsersAva'>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
                 </div>
-                <div className='UserPosts1'>
+                <div className='UserPosts1 borderPosts'>
                     Post-1
       </div>
                 <div className='UsersAva'>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
                 </div>
-                <div className='UserPosts2'>
+                <div className='UserPosts2 borderPosts'>
                     Post-2
       </div>
                 <div className='UsersAva'>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
                 </div>
-                <div className='UserPosts3'>
+                <div className='UserPosts3 borderPosts'>
                     Post-3
       </div>
             </div>

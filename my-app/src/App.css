@@ -35,7 +35,7 @@
 }
 .Content {
   grid-area: cont;
-  background: darkcyan;
+  /* background: darkcyan; */
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 1fr repeat(6, auto);
@@ -81,6 +81,10 @@ textarea {
 }
 .UserPosts {
   grid-area: up;
+}
+.borderPosts {
+  border: 1px solid rgb(184, 184, 231);
+  border-radius: 10px;
 }
 .App * img {
   width: 80px;
