@@ -11,7 +11,7 @@
 }
 .Header,
 .Aside {
-  background: rgb(109, 230, 203);
+  background: rgb(132, 226, 206);
 }
 .Header {
   grid-area: header;
