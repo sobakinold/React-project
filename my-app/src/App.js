@@ -6,11 +6,13 @@ import Header from './components/Header';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Aside />
-      <Profile />
-    </div >
+    <div className='Wrapper'>
+      <div className="App">
+        <Header />
+        <Aside />
+        <Profile />
+      </div >
+    </div>
   );
 }
 
