@@ -93,6 +93,26 @@ textarea {
 @media (max-width: 800px) {
   .App {
     width: auto;
+    grid-template-columns: 120px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar content";
+    /* "sidebar"; */
+  }
+}
+@media (max-width: 600px) {
+  .App {
+    width: auto;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar content";
+    /* "sidebar"; */
+  }
+}
+@media (max-width: 300px) {
+  .App {
+    width: auto;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
