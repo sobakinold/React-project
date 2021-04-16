@@ -9,10 +9,9 @@ const Profile = () => {
                 <img className={classes.avatar} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
             </div>
             <div className={classes.discript}>Discript</div>
+            {/* <div><h3>Мои посты</h3></div> */}
             <div className={classes.myPosts}>
-                {/* <div className={classes.textarea}> */}
                 <textarea name="" id="" cols="" rows="5"></textarea>
-                {/* </div> */}
             </div>
             <div className={classes.button}>
                 <button>Go</button>

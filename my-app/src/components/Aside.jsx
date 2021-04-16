@@ -4,19 +4,19 @@ import classes from './Aside.module.css';
 const Aside = () => {
     return <div className={classes.Aside}>
         <div className={classes.item}>
-            <a href='#'>Profile</a>
+            <a>Profile</a>
         </div>
         <div className={classes.item}>
-            <a href="#">Message</a>
+            <a>Message</a>
         </div>
         <div className={classes.item}>
-            <a href="#">Music</a>
+            <a>Music</a>
         </div>
         <div className={classes.item}>
-            <a href="#">News</a>
+            <a>News</a>
         </div>
         <div className={classes.item}>
-            <a href="#">Settings</a>
+            <a>Settings</a>
         </div>
     </div>
 }
