@@ -1,0 +1,69 @@
+.Article {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+        "head head"
+        "cont cont";
+    grid-gap: 5px;
+}
+.HeaderArt {
+    grid-area: head;
+    background: coral;
+}
+.Content {
+    grid-area: cont;
+    /* background: darkcyan; */
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 1fr repeat(6, auto);
+    grid-template-areas:
+        "ad dis"
+        "mp mp"
+        "but but"
+        /* "ap ap" */
+        /* "ap ap" */
+        "ap ap";
+    grid-gap: 5px;
+}
+.AvaDiscript {
+    grid-area: ad;
+}
+.Discript {
+    grid-area: dis;
+}
+.MyPosts {
+    grid-area: mp;
+    display: grid;
+}
+textarea {
+    grid-column: 1/-1;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 231);
+}
+.Button {
+    grid-area: but;
+    justify-self: end;
+}
+.AllPosts {
+    grid-area: ap;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "ua up"
+        "ua up"
+        "ua up";
+    grid-gap: 5px;
+}
+.UserAva {
+    grid-area: ua;
+}
+.UserPosts {
+    grid-area: up;
+}
+.borderPosts {
+    border: 1px solid rgb(184, 184, 231);
+    border-radius: 10px;
+}

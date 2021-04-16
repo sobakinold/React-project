@@ -13,13 +13,13 @@
 .Aside {
   background: rgb(132, 226, 206);
 }
-.Header {
+/* .Header {
   grid-area: header;
-}
-.Aside {
+} */
+/* .Aside {
   grid-area: sidebar;
-}
-.Article {
+} */
+/* .Article {
   grid-area: content;
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -35,7 +35,7 @@
 }
 .Content {
   grid-area: cont;
-  /* background: darkcyan; */
+  /* background: darkcyan; 
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 1fr repeat(6, auto);
@@ -43,8 +43,6 @@
     "ad dis"
     "mp mp"
     "but but"
-    /* "ap ap" */
-    /* "ap ap" */
     "ap ap";
   grid-gap: 5px;
 }
@@ -87,7 +85,7 @@ textarea {
 .borderPosts {
   border: 1px solid rgb(184, 184, 231);
   border-radius: 10px;
-}
+} */
 .App * img {
   width: 80px;
 }
@@ -99,7 +97,6 @@ textarea {
     grid-template-areas:
       "header header"
       "sidebar content";
-    /* "sidebar"; */
   }
 }
 @media (max-width: 600px) {
@@ -109,7 +106,6 @@ textarea {
     grid-template-areas:
       "header header"
       "sidebar content";
-    /* "sidebar"; */
   }
 }
 @media (max-width: 300px) {
