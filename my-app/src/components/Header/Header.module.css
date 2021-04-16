@@ -1,7 +1,10 @@
 .Header {
     grid-area: header;
+    display: grid;
     background: rgb(132, 226, 206);
+    justify-items: center;
 }
 .logo {
     width: 80px;
+    padding: 25px;
 }

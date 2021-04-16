@@ -20,7 +20,7 @@
     grid-template-areas:
         "ad dis"
         "mp mp"
-        "but but"
+        ". but"
         "ap ap";
     grid-gap: 5px;
 }
@@ -46,25 +46,11 @@ textarea {
 .allPosts {
     grid-area: ap;
     display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
     grid-template-areas:
-        "ua up"
-        "ua up"
-        "ua up";
+        "item"
+        "item"
+        "item";
     grid-gap: 5px;
-}
-.avatar {
-    grid-area: ua;
-}
-.userPosts1,
-.userPosts2,
-.userPosts3 {
-    grid-area: up;
-}
-.post {
-    height: 80px;
-    border: 1px solid rgb(184, 184, 231);
-    border-radius: 10px;
-    padding: 10px;
 }

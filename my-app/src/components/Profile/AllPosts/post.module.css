@@ -1,0 +1,19 @@
+.item {
+    grid-area: item;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "img post";
+    grid-gap: 5px;
+}
+.img {
+    grid-area: img;
+}
+.post {
+    grid-area: post;
+}
+.post {
+    height: 60px;
+    border: 1px solid rgb(184, 184, 231);
+    border-radius: 10px;
+    padding: 10px;
+}
