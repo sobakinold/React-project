@@ -7,7 +7,7 @@ const Post = () => {
             <div classes={classes.img}>
                 <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
             </div>
-            <div className={classes.post}>Post</div>
+            <div className={classes.post}>Lorem ipsum dolor sit amet.</div>
         </div>
     )
 }
