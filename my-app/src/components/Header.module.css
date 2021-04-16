@@ -1,0 +1,7 @@
+.Header {
+    grid-area: header;
+    background: rgb(132, 226, 206);
+}
+.logo {
+    width: 80px;
+}

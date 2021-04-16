@@ -1,0 +1,7 @@
+.Aside {
+    grid-area: sidebar;
+    background: rgb(132, 226, 206);
+}
+.item {
+    color: white;
+}

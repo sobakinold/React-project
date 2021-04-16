@@ -1,4 +1,4 @@
-.Article {
+.article {
     grid-area: content;
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -8,13 +8,12 @@
         "cont cont";
     grid-gap: 5px;
 }
-.HeaderArt {
+.img {
     grid-area: head;
     background: coral;
 }
-.Content {
+.content {
     grid-area: cont;
-    /* background: darkcyan; */
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr repeat(6, auto);
@@ -22,18 +21,16 @@
         "ad dis"
         "mp mp"
         "but but"
-        /* "ap ap" */
-        /* "ap ap" */
         "ap ap";
     grid-gap: 5px;
 }
-.AvaDiscript {
+.avaDiscript {
     grid-area: ad;
 }
-.Discript {
+.discript {
     grid-area: dis;
 }
-.MyPosts {
+.myPosts {
     grid-area: mp;
     display: grid;
 }
@@ -42,11 +39,11 @@ textarea {
     border-radius: 10px;
     border: 1px solid rgb(184, 184, 231);
 }
-.Button {
+.button {
     grid-area: but;
     justify-self: end;
 }
-.AllPosts {
+.allPosts {
     grid-area: ap;
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -57,13 +54,16 @@ textarea {
         "ua up";
     grid-gap: 5px;
 }
-.UserAva {
+.avatar {
     grid-area: ua;
 }
-.UserPosts {
+.userPosts1,
+.userPosts2,
+.userPosts3 {
     grid-area: up;
 }
-.borderPosts {
+.post {
+    height: 80px;
     border: 1px solid rgb(184, 184, 231);
     border-radius: 10px;
 }
