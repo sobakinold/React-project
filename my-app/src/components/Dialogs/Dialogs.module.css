@@ -1,2 +1,35 @@
 .content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas:
+        "head head"
+        "uNav dPage"
+        "uNav dPage";
+}
+.header {
+    grid-area: head;
+}
+.user_nav {
+    grid-area: uNav;
+    border-right-style: groove;
+    border-right-width: 7px;
+    border-right-color: rgb(226, 155, 138);
+}
+.dialog_page {
+    grid-area: dPage;
+}
+.avatar {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "img dialog";
+    grid-gap: 20px;
+    margin: 10px;
+}
+.img {
+    grid-area: img;
+}
+.dialog {
+    grid-area: dialog;
 }
