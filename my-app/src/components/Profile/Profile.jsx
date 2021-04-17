@@ -17,9 +17,8 @@ const Profile = () => {
                 <button>Add post</button>
             </div>
             <div className={classes.allPosts}>
-                <Post />
-                <Post />
-                <Post />
+                <Post message='Привет, как дела?' />
+                <Post message='Все нормально! Как сам?' />
             </div>
         </div>
     </div>
