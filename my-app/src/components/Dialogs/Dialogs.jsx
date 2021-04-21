@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from './Dialogs.module.css';
 
 
-const Dialods = () => {
+const Dialogs = () => {
     return (
         <div className={classes.content}>
             <div className={classes.header}>
@@ -10,13 +11,25 @@ const Dialods = () => {
             </div>
             <div className={classes.user_nav}>
                 <ul>
-                    <li className={classes.Dialods + " " + classes.active}>Дима</li>
-                    <li>Антон</li>
-                    <li>Светлана</li>
-                    <li>Сергей</li>
-                    <li>Владимир</li>
-                    <li>Маша</li>
-                    <li>Валерa</li>
+                    <li className={classes.dialog + " " + classes.active}><NavLink to='/dialog/1'>Дима</NavLink></li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/2'>Антон</NavLink>
+                    </li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/3'>Светлана</NavLink>
+                    </li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/4'>Сергей</NavLink>
+                    </li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/5'>Владимир</NavLink>
+                    </li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/6'>Маша</NavLink>
+                    </li>
+                    <li className={classes.dialog}>
+                        <NavLink to='/dialog/7'>Валерий</NavLink>
+                    </li>
                 </ul>
             </div>
             <div className={classes.dialog_page}>
@@ -44,4 +57,4 @@ const Dialods = () => {
     )
 }
 
-export default Dialods;
+export default Dialogs;

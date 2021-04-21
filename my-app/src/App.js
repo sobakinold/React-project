@@ -3,7 +3,7 @@ import './App.css';
 import Profile from './components/Profile/Profile';
 import Aside from './components/Aside/Aside';
 import Header from './components/Header/Header';
-import Dialods from './components/Dialogs/Dialogs';
+import Dialogs from './components/Dialogs/Dialogs';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const App = () => {
@@ -14,9 +14,9 @@ const App = () => {
         <Header />
         <Aside />
         {/* "Header" и "Aside" постоянная структура HTML в которой "ротируются" другие компоненты */}
-        <Route path='/Dialogs' component={Dialods} />
+        <Route path='/Dialogs' component={Dialogs} />
         <Route path='/Profile' component={Profile} />
-        {/* <Dialods /> */}
+        {/* <Dialogs /> */}
         {/* <Profile /> */}
       </BrowserRouter>
     </div >

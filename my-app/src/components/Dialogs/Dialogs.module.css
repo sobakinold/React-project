@@ -36,3 +36,23 @@
 ul li.active {
     color: rgb(81, 119, 247);
 }
+/* @media (max-width: 800px) {
+    .content {
+        width: auto;
+        grid-template-columns: 120px 1fr;
+        grid-template-areas:
+            "head head"
+            "dPage dPage"
+            "uNav uNav";
+    }
+}
+@media (max-width: 600px) {
+    .content {
+        width: auto;
+        grid-template-columns: 100px 1fr;
+        grid-template-areas:
+            "head head"
+            "dPage dPage"
+            "uNav uNav";
+    }
+} */

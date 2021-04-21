@@ -32,7 +32,7 @@
       "sidebar content";
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .App {
     width: auto;
     grid-template-columns: 1fr;
