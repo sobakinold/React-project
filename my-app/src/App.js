@@ -10,11 +10,10 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+        {/* Оболочка "BrowserRouter" позволяет работать "Route" для переключений между компонентами */}
         <Header />
         <Aside />
-        {/* <Route path='/Music' component={Music} />
-        <Route path='/News' component={News} />
-        <Route path='/Settings' component={Settings} /> */}
+        {/* "Header" и "Aside" постоянная структура HTML в которой "ротируются" другие компоненты */}
         <Route path='/Dialogs' component={Dialods} />
         <Route path='/Profile' component={Profile} />
         {/* <Dialods /> */}

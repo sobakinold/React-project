@@ -10,7 +10,7 @@ const Dialods = () => {
             </div>
             <div className={classes.user_nav}>
                 <ul>
-                    <li>Дима</li>
+                    <li className={classes.Dialods + " " + classes.active}>Дима</li>
                     <li>Антон</li>
                     <li>Светлана</li>
                     <li>Сергей</li>

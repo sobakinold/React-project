@@ -2,7 +2,10 @@
     grid-area: sidebar;
     background: rgb(132, 226, 206);
 }
-.item {
+.item a {
     color: white;
     padding: 10px;
+}
+.item a.activeLink {
+    color: green;
 }

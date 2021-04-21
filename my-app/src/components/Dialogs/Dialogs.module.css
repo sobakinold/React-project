@@ -33,3 +33,6 @@
 .dialog {
     grid-area: dialog;
 }
+ul li.active {
+    color: rgb(81, 119, 247);
+}
