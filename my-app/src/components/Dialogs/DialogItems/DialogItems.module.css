@@ -1,0 +1,9 @@
+.dialog_items {
+    grid-area: di;
+    border-right-style: groove;
+    border-right-width: 7px;
+    border-right-color: rgb(226, 155, 138);
+}
+ul li.active {
+    color: rgb(81, 119, 247);
+}

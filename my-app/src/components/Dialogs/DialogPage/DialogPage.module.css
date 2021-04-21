@@ -1,0 +1,17 @@
+.dialog_page {
+    grid-area: dPage;
+}
+.avatar {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "img dialog";
+    grid-gap: 20px;
+    margin: 10px;
+}
+.img {
+    grid-area: img;
+}
+.dialog {
+    grid-area: dialog;
+}
