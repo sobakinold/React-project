@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Dialogs.module.css';
 
+
 const Dialods = () => {
     return (
         <div className={classes.content}>
@@ -15,7 +16,7 @@ const Dialods = () => {
                     <li>Сергей</li>
                     <li>Владимир</li>
                     <li>Маша</li>
-                    <li>Валера</li>
+                    <li>Валерa</li>
                 </ul>
             </div>
             <div className={classes.dialog_page}>

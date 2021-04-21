@@ -2,7 +2,7 @@ import React from 'react';
 import Post from './AllPosts/post';
 import classes from './Profile.module.css';
 
-const Profile = () => {
+const Profile = (props) => {
     return <div className={classes.article}>
         <div className={classes.img}></div>
         <div className={classes.content}>
