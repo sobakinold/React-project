@@ -9,7 +9,10 @@
     "sidebar content";
   grid-gap: 5px;
 }
-
+.logo {
+  width: 80px;
+  padding: 25px;
+}
 .App * img {
   width: 80px;
 }

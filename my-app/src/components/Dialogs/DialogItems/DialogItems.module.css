@@ -1,9 +1,9 @@
-.dialog_items {
-    grid-area: di;
+.dialogItems {
+    padding: 10px;
     border-right-style: groove;
-    border-right-width: 7px;
-    border-right-color: rgb(226, 155, 138);
+    border-right-color: rgb(236, 173, 71);
+    border-right-width: 10px;
 }
-ul li.active {
-    color: rgb(81, 119, 247);
+.dialog .active {
+    color: gold;
 }
