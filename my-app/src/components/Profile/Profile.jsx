@@ -1,21 +1,18 @@
 import React from 'react';
 import Post from './AllPosts/post';
 import classes from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/profile_info';
+import AvaDiscript from './AvaDiscript/ava_discript';
+import Discript from './Discript/discript';
+import MyPosts from './MyPosts/my_posts';
 
 const Profile = (props) => {
     return <div className={classes.article}>
-        <div className={classes.img}></div>
+        <ProfileInfo />
         <div className={classes.content}>
-            <div className={classes.avaDiscript}>
-                <img className={classes.avatar} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSi-Gltn2w68Fn37i4rPk5IAW5xv9Xehwww&usqp=CAU' />
-            </div>
-            <div className={classes.discript}>Discript</div>
-            <div className={classes.myPosts}>
-                <textarea name="" id="" cols="" rows="5"></textarea>
-            </div>
-            <div className={classes.button}>
-                <button>Add post</button>
-            </div>
+            <AvaDiscript />
+            <Discript />
+            <MyPosts />
             <div className={classes.allPosts}>
                 <Post message='Привет, как дела?' />
                 <Post message='Все нормально! Как сам?' />

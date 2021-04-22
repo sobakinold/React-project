@@ -8,10 +8,6 @@
         "cont cont";
     grid-gap: 5px;
 }
-.img {
-    grid-area: head;
-    background: coral;
-}
 .content {
     grid-area: cont;
     display: grid;
@@ -24,30 +20,7 @@
         "ap ap";
     grid-gap: 5px;
 }
-.avaDiscript {
-    grid-area: ad;
-}
-.discript {
-    grid-area: dis;
-}
-.myPosts {
-    grid-area: mp;
-    display: grid;
-}
-textarea {
-    grid-column: 1/-1;
-    border-radius: 10px;
-    border: 1px solid rgb(184, 184, 231);
-}
-.button {
-    grid-area: but;
-    justify-self: end;
-}
+
 .allPosts {
     grid-area: ap;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: "item";
-    grid-gap: 5px; */
 }

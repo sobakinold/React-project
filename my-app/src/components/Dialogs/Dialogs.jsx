@@ -12,10 +12,9 @@ const DialogItems = (props) => {
 
 const DialogWindow = (props) => {
     return (
-        <div className={classes.dialog_window}>
-            <div className={classes.dialog}>
-                {props.text}
-            </div>
+        <div className={classes.dialog}>
+            {/* {props.img} */}
+            {props.text}
         </div>
     )
 }
@@ -35,7 +34,8 @@ const Dialogs = () => {
                     <DialogItems name='Валерий' id='7' />
                 </div>
             </ div>
-            <div className='DialogWindow'>
+            <div className={classes.dialog_window}>
+                {/* Создаю компонент "DialogWindow" */}
                 <DialogWindow text='Привет! Как дела?' />
                 <DialogWindow text='Зашибись! Сам как?' />
                 <DialogWindow text='Нормально' />
