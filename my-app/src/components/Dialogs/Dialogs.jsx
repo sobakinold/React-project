@@ -11,7 +11,13 @@ const Dialogs = () => {
                 Dialogs
             </div>
             {/* Создаю компонент "DialogItems" */}
-            <DialogItems />
+            <DialogItems name='Дима' id='1' />
+            <DialogItems name='Антон' id='2' />
+            <DialogItems name='Светлана' id='3' />
+            <DialogItems name='Сергей' id='4' />
+            <DialogItems name='Владимир' id='5' />
+            <DialogItems name='Маша' id='6' />
+            <DialogItems name='Валерий' id='7' />
             {/* Создаю компонент "DialogPage" */}
             <DialogPage />
         </div>

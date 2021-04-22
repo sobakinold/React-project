@@ -16,8 +16,6 @@ const App = () => {
         {/* "Header" и "Aside" постоянная структура HTML в которой "ротируются" другие компоненты */}
         <Route path='/Dialogs' component={Dialogs} />
         <Route path='/Profile' component={Profile} />
-        {/* <Dialogs /> */}
-        {/* <Profile /> */}
       </BrowserRouter>
     </div >
 
