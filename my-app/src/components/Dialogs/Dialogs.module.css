@@ -1,12 +1,17 @@
 .content {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    /* grid-template-rows: 30px 1fr; */
-    grid-template-areas:
-        "head head"
-        "di dPage"
-        "di dPage";
+    grid-template-columns: 1fr 10fr;
+    padding: 10px;
 }
-.header {
-    grid-area: head;
+.dialogItems {
+    padding: 10px;
+    border-right-style: groove;
+    border-right-color: rgb(236, 173, 71);
+    border-right-width: 10px;
+}
+.dialog .active {
+    color: gold;
+}
+.dialog_window {
+    padding: 10px;
 }
