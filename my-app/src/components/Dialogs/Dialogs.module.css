@@ -9,9 +9,9 @@
     border-right-color: rgb(236, 173, 71);
     border-right-width: 10px;
 }
-.dialog .active {
-    color: gold;
-}
 .dialog_window {
     padding: 10px;
+}
+.active {
+    color: gold;
 }

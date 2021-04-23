@@ -3,7 +3,8 @@ import classes from './profile_info.module.css';
 
 const ProfileInfo = () => {
     return (
-        <div className={classes.img}></div>
+        <div className={classes.img}>
+        </div>
     )
 }
 

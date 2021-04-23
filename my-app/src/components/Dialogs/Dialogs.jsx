@@ -1,23 +1,29 @@
 import React from 'react';
 import classes from './Dialogs.module.css';
-import { NavLink } from 'react-router-dom';
-// import DialogItems from './DialogItems/DialogItems';
-// import DialogWindow from './DialogWindow/DialogWindow';
+// import { NavLink } from 'react-router-dom';
+import DialogItems from './DialogItems/DialogItems';
+import DialogWindow from './DialogWindow/DialogWindow';
 
 
-const DialogItems = (props) => {
-    let path = '/Dialogs/' + " " + props.id;
-    return (<div className={classes.dialog + " " + classes.active}><NavLink to={path}>{props.name}</NavLink></div>)
-}
+let itemsData = [
+    { id: 1, name: "Дима" },
+    { id: 2, name: "Антон" },
+    { id: 3, name: "Светлана" },
+    { id: 4, name: "Сергей" },
+    { id: 5, name: "Владимир" },
+    { id: 6, name: "Маша" },
+    { id: 7, name: "Валерий" }
+]
 
-const DialogWindow = (props) => {
-    return (
-        <div className={classes.dialog}>
-            {/* {props.img} */}
-            {props.text}
-        </div>
-    )
-}
+let dialogData = [
+    { id: 1, message: "Привет! Как дела?" },
+    { id: 2, message: "Зашибись! Сам как?" },
+    { id: 3, message: "Нормально" }
+]
+
+let itemsElement = itemsData.map(item => <DialogItems name={item.name} id={item.id} />)
+
+let dialogElement = dialogData.map(dialog => <DialogWindow message={dialog.message} />)
 
 const Dialogs = () => {
     return (
@@ -25,20 +31,21 @@ const Dialogs = () => {
             < div className={classes.dialogs} >
                 <div className={classes.dialogItems}>
                     {/* Создаю компонент "DialogItems" */}
-                    <DialogItems name='Дима' id='1' />
-                    <DialogItems name='Антон' id='2' />
-                    <DialogItems name='Светлана' id='3' />
-                    <DialogItems name='Сергей' id='4' />
-                    <DialogItems name='Владимир' id='5' />
-                    <DialogItems name='Маша' id='6' />
-                    <DialogItems name='Валерий' id='7' />
+                    {itemsElement}
+                    {/* <DialogItems name={itemsData[0].name} id={itemsData[0].id} />
+                    <DialogItems name={itemsData[1].name} id={itemsData[1].id} />
+                    <DialogItems name={itemsData[2].name} id={itemsData[2].id} />
+                    <DialogItems name={itemsData[3].name} id={itemsData[3].id} />
+                    <DialogItems name={itemsData[4].name} id={itemsData[4].id} />
+                    <DialogItems name={itemsData[5].name} id={itemsData[5].id} />
+                    <DialogItems name={itemsData[6].name} id={itemsData[6].id} /> */}
                 </div>
             </ div>
             <div className={classes.dialog_window}>
-                {/* Создаю компонент "DialogWindow" */}
-                <DialogWindow text='Привет! Как дела?' />
-                <DialogWindow text='Зашибись! Сам как?' />
-                <DialogWindow text='Нормально' />
+                {dialogElement}
+                {/* <DialogWindow message={dialogData[0].message} id={dialogData[0].id} />
+                <DialogWindow message={dialogData[1].message} id={dialogData[1].id} />
+                <DialogWindow message={dialogData[2].message} id={dialogData[2].id} /> */}
             </div>
         </div>
     )
