@@ -1,6 +1,6 @@
 .Aside {
     grid-area: sidebar;
-    background: rgb(132, 226, 206);
+    background: #4df0a4;
 }
 .item a {
     color: white;

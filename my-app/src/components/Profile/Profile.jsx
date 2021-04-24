@@ -6,17 +6,20 @@ import AvaDiscript from './AvaDiscript/ava_discript';
 import Discript from './Discript/discript';
 import MyPosts from './MyPosts/my_posts';
 
-let postData = [
-    { id: 1, message: "Привет, как дела?" },
-    { id: 2, message: "Все нормально! Как сам?" }
-]
+// let postData = [
+//     { id: 1, message: "Привет, как дела?" },
+//     { id: 2, message: "Все нормально! Как сам?" }
+// ]
 
-let postElement = postData.map(post => <Post message={post.message} id={post.id} />)
+// let postElement = props.postData.map(post => <Post message={post.message} id={post.id} />)
 
 const Profile = (props) => {
-    return <div className={classes.article}>
+
+    let postElement = props.postData.map(post => <Post message={post.message} id={post.id} />)
+
+    return <div className={classes.content}>
         <ProfileInfo />
-        <div className={classes.content}>
+        <div className={classes.contentElem}>
             <AvaDiscript />
             <Discript />
             <MyPosts />

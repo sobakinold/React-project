@@ -1,4 +1,4 @@
-.article {
+.content {
     grid-area: content;
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -8,7 +8,7 @@
         "cont cont";
     grid-gap: 5px;
 }
-.content {
+.contentElem {
     grid-area: cont;
     display: grid;
     grid-template-columns: 80px 1fr;

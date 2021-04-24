@@ -1,17 +1,30 @@
 .content {
+    grid-area: content;
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+        "di di"
+        "dg dw";
+}
+.dialogInfo {
+    grid-area: di;
+    background: #ff7f50;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.dialogElem {
+    grid-area: dg;
+}
+.dialogWindow {
+    grid-area: dw;
     padding: 10px;
 }
 .dialogItems {
     padding: 10px;
     border-right-style: groove;
-    border-right-color: rgb(236, 173, 71);
+    border-right-color: #ff7f50;
     border-right-width: 10px;
-}
-.dialog_window {
     padding: 10px;
-}
-.active {
-    color: gold;
 }
